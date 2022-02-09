@@ -5,7 +5,7 @@ const instance = new web3.eth.Contract(
   JSON.parse(CampaignFactory.interface),
 
   //the address the contract was deployed to
-  '0xA038de71509F514Ef6804DbbCaA89BDcD9ac1E09'
+  process.env.FACTORY_CONTRACT_ADDRESS
 );
 
 export default instance;
